@@ -25,6 +25,8 @@ CTRL-U			Delete all characters before the cursor in line.
 CTRL-T			Indent current line.
 CTRL-D			Unindent current line.
 
+CTRL-O			Execute one command and return to insert mode.
+
 ==============================================================================
 Other							*cheatsheet-other*
 
