@@ -1,0 +1,47 @@
+*cheatsheet.txt*	For Vim version 8.0.	Last change: 2017 Nov 17
+
+Personal cheatsheet					*cheatsheet*
+
+==============================================================================
+Motion							*cheatsheet-motion*
+
+'' ``			Jump to the position before the latest jump.
+'. `.			Jump to the position where the last change was made.
+
+:ju[mps]		Print the jump list.
+CTRL-O			Go to older cursor position in jump list.
+CTRL-I			Go to newer cursor position in jump list.
+
+:changes		Print the change list.
+g;			Go to older cursor position in change list.
+g,			Go to newer cursor position in change list.
+
+==============================================================================
+Insert mode						*cheatsheet-insert*
+
+CTRL-W			Delete the word before the cursor.
+CTRL-U			Delete all characters before the cursor in line.
+
+CTRL-T			Indent current line.
+CTRL-D			Unindent current line.
+
+==============================================================================
+Other							*cheatsheet-other*
+
+CTRL-E			Scroll window [count] lines downwards in the buffer.
+CTRL-Y			Scroll window [count] lines upwards in the buffer.
+
+:{range}norm[al] {commands}
+			Execute Normal mode commands for each line in range.
+			Example: :g/delete_lines_with_this/normal dd
+
+==============================================================================
+Generating tags
+
+This file is loaded as a plugin. If you ever need to rebuild the tags file, run
+this command: >
+
+	:helpt .
+
+vim:tw=78:ts=8:ft=help:norl:
+
